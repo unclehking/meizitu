@@ -22,7 +22,7 @@ function download(url){
 		   if(!error && response.statusCode == 200) {
 			   var $ = cheerio.load(body);
 			   var maxNum = $("#page a").eq(-2).text();
-			   var dirName = $(".article h2").text();
+			   var dirName = /(\d*)$/.exec(url)[0]+"_"+$(".article h2").text();
 			   var imgBaseUrl = $("#content img").attr("src").replace(/\/\d*\.jpg/,"");
 			   if(!fs.existsSync(dirName)){
 				   fs.mkdir(dirName, 0777, function(err){
