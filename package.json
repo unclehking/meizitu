@@ -1,0 +1,26 @@
+{
+  "name": "meizitu",
+  "version": "1.0.0",
+  "description": "妹子图下载",
+  "main": "meizi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unclehking/meizitu.git"
+  },
+  "keywords": [
+    "meizi"
+  ],
+  "author": "HKing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unclehking/meizitu/issues"
+  },
+  "homepage": "https://github.com/unclehking/meizitu#readme",
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0"
+  }
+}
