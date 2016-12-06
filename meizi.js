@@ -45,8 +45,10 @@ function download(url){
 	   });
 };
 
-const param = process.argv.splice(2)[0];
+const param = process.argv.splice(2);
 param && function(){
-	const url = /^(http)/.test(param) ? param : baseUrl+param;
-	download(url);
+	param.forEach(function(t,i){
+		var url = /^(http)/.test(t) ? t : baseUrl+t;
+		download(url);
+	});
 }();
