@@ -3,4 +3,4 @@
 
 ##使用方法
 npm install <br /> 
-node meizi.js <mmID> <...>
+node meizi.js <id> <...>
