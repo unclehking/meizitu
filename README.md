@@ -6,12 +6,15 @@
 <code>
 npm clone git@github.com:unclehking/meizitu.git  
 </code>
+<br />
 <code>
 npm install  
 </code>
+<br />
 <code>
 node meizi.js < id > <...> 
 </code>
+<br />
 
 <br /> 
 ##2017-08-05 更新 <br />
