@@ -4,13 +4,13 @@
 ###使用方法
 
 <code>
-npm clone git@github.com:unclehking/meizitu.git
-npm install 
-node meizi.js < id > <...>
+npm clone git@github.com:unclehking/meizitu.git  <br />
+npm install  <br />
+node meizi.js < id > <...> <br />
 </code>
 
 <br /> 
-### 2017-08-05 更新
-1、修改妹子图防盗链的问题
-2、调整下载目录结构
+### 2017-08-05 更新 <br />
+1、修改妹子图防盗链的问题 <br />
+2、调整下载目录结构 <br />
 
