@@ -14,7 +14,14 @@ const baseUrl = "http://www.mmjpg.com/mm/";
 function downloadImg(url,dirName){
 	var fName = /\d*\.jpg/.exec(url)[0];
 	console.log(url);
-	request(url).pipe(fs.createWriteStream(`${dirName}/${fName}`));
+	//解决妹子图防盗链
+	var options = {
+      	uri: url,
+      	headers: {
+        	'Referer': 'http://www.baidu.com'
+      	}
+    };
+	request(options).pipe(fs.createWriteStream(`${dirName}/${fName}`));
 }
 
 function download(url){
@@ -22,7 +29,7 @@ function download(url){
 		   if(!error && response.statusCode == 200) {
 			   var $ = cheerio.load(body);
 			   var maxNum = $("#page a").eq(-2).text();
-			   var dirName = /(\d*)$/.exec(url)[0]+"_"+$(".article h2").text();
+			   var dirName = "meizi/"+/(\d*)$/.exec(url)[0]+"_"+$(".article h2").text();
 			   var imgBaseUrl = $("#content img").attr("src").replace(/\/\d*\.jpg/,"");
 			   if(!fs.existsSync(dirName)){
 				   fs.mkdir(dirName, 0777, function(err){
