@@ -19,6 +19,9 @@ npm install
 node meizi.js < id > <...>
 </code>
 <br />
+  
+![图片ＩＤ](http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/001.png)
+![图片ＩＤ](http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/00２.png)
 
 <br />
 ## 2017-08-05 更新 <br />
