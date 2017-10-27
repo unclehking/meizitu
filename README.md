@@ -1,5 +1,5 @@
 # meizitu
-妹子图( www.mmjpg.com )下载 ^_^
+妹子图( www.mmjpg.com ) 批量下载 ^_^
 
 ## 使用方法
 
