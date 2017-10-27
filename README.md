@@ -20,8 +20,8 @@ node meizi.js < id > <...>
 </code>
 <br />
 <br />
-![图片id](http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/001.png)
-
+<img src="http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/001.png" />
+<img src="http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/002.png" />
 <br />
 ## 2017-08-05 更新 <br />
 1、修改妹子图防盗链的问题 <br />
