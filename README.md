@@ -20,9 +20,7 @@ node meizi.js < id > <...>
 </code>
 <br />
 <br />
-![图片ＩＤ](http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/001.png)
-<br />
-![文件夹](http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/002.png)
+![图片id](http://hkingme.oss-cn-shenzhen.aliyuncs.com/github/001.png)
 
 <br />
 ## 2017-08-05 更新 <br />
