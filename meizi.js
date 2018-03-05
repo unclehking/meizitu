@@ -30,7 +30,7 @@ function download(url){
 			   var $ = cheerio.load(body);
 			   var maxNum = $("#page a").eq(-2).text();
 			   var dirName = "meizi/"+/(\d*)$/.exec(url)[0]+"_"+$(".article h2").text();
-			   var imgBaseUrl = $("#content img").attr("src").replace(/\/\d*\.jpg/,"");
+			   var imgBaseUrl = $("#content img").attr("src").replace(/[A-Za-z0-9_]*\.jpg$/,"");
 			   if(!fs.existsSync(dirName)){
 				   fs.mkdir(dirName, 0777, function(err){
 					   if(err){
