@@ -13,7 +13,7 @@ const baseUrl = "https://www.mzitu.com/";
 
 function downloadImg(url,dirName){
 	var fName = /\d*\.jpg/.exec(url)[0];
-	console.log(url,99);
+	console.log(`下载: ${url}`);
 	//解决妹子图防盗链
 	var options = {
       	uri: url,
@@ -27,7 +27,6 @@ function downloadImg(url,dirName){
 }
 
 function download(url){
-	console.log(url)
 	request({
 		uri: url,
       	headers: {
@@ -62,7 +61,7 @@ function download(url){
 			   }
 
 		   	}else{
-		   		console.log(body,999)
+		   		
 		   	}
 	   });
 };
